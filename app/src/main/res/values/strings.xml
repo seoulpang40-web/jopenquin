@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">약물 체크</string>
+    <string name="auth_title">오늘의 약·물 체크</string>
+    <string name="auth_subtitle">아침·점심·저녁 약 복용과\n물 마신 횟수를 크게 보고 체크해요.\n내 기록은 안전하게 보관됩니다.</string>
+    <string name="auth_button_google">Google로 시작하기</string>
+    <string name="auth_loading">계정을 확인하고 있어요…</string>
+    <string name="med_section_title">오늘 챙길 약</string>
+    <string name="med_morning">아침 약</string>
+    <string name="med_lunch">점심 약</string>
+    <string name="med_dinner">저녁 약</string>
+    <string name="med_status_done">복용 완료</string>
+    <string name="med_status_pending">눌러서 복용 체크</string>
+    <string name="water_section_title">오늘 마신 물</string>
+    <string name="water_count_format">%1$d잔</string>
+    <string name="water_goal_hint">하루 권장 8잔</string>
+    <string name="water_extra_format">목표 달성! (+%1$d잔 더)</string>
+    <string name="water_add_button">물 한 잔 마셨어요 (+1컵)</string>
+    <string name="water_undo_button">한 잔 취소 (-1)</string>
+    <string name="account_dialog_title">계정 정보</string>
+    <string name="account_sign_out">로그아웃</string>
+    <string name="dialog_close">닫기</string>
+    <string name="retry_button">다시 시도</string>
+    <string name="loading_records">오늘 기록을 불러오는 중…</string>
+    <string name="cd_account_menu">계정 메뉴 열기</string>
+    <string name="cd_med_done">복용 완료 체크됨</string>
+    <string name="cd_med_pending">아직 복용 전</string>
+    <string name="cd_water_cups">마신 물 %1$d잔</string>
+</resources>

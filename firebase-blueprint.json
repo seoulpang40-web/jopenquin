@@ -1,0 +1,63 @@
+{
+  "entities": {
+    "DailyHealthLog": {
+      "title": "DailyHealthLog",
+      "description": "Tracks a senior user's daily medication checklist (morning, lunch, dinner) and water intake cups for a specific calendar date.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the owner."
+        },
+        "dateKey": {
+          "type": "string",
+          "description": "Calendar date key in YYYY-MM-DD format."
+        },
+        "morningTaken": {
+          "type": "boolean",
+          "description": "Whether morning medication has been taken."
+        },
+        "lunchTaken": {
+          "type": "boolean",
+          "description": "Whether lunch medication has been taken."
+        },
+        "dinnerTaken": {
+          "type": "boolean",
+          "description": "Whether dinner medication has been taken."
+        },
+        "waterCups": {
+          "type": "integer",
+          "description": "Number of water cups consumed on this date (0 to 30)."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation server timestamp written via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update server timestamp written via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "dateKey",
+        "morningTaken",
+        "lunchTaken",
+        "dinnerTaken",
+        "waterCups",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/daily_logs/{dateKey}": {
+      "schema": {
+        "$ref": "#/entities/DailyHealthLog"
+      },
+      "description": "User-scoped daily medication and water intake logs keyed by YYYY-MM-DD."
+    }
+  }
+}
